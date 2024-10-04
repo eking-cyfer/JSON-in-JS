@@ -1,9 +1,18 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>GREEN</title>
-    </head>
-    <body>
-        <h1>Hello</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON in JS</title>
+</head>
+<body>
+    <h2>Convert a Javascript object into a Json string ,and send it to the server</h2>
+    <p id="result"></p>
+    <script>
+var myObj= {name:"Edward",age:13,grade: 8};
+var myJSON=JSON.stringify(myObj);
+var newObj=JSON.parse(myJSON);
+document.getElementById("result").innerHTML=newObj.name +" "+ newObj.age
+    </script>
+</body>
 </html>
